@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
 import { Marginer } from '../marginer';
 import { Button } from '../button';
+import Calendar from 'react-calendar';
+import 'react-calendar/dist/Calendar.css';
 
 const CardContainer = styled.div`
   min-height: 4.3em;
