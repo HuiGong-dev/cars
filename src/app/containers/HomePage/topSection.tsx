@@ -4,6 +4,7 @@ import tw from 'twin.macro';
 import BlobImg from '../../../assets/images/blob.svg';
 import MclarenCarImg from '../../../assets/images/mclaren-orange-big.png';
 import { SCREENS } from '../../components/responsive';
+import { Button } from '../../components/button';
 
 const TopSectionContainer = styled.div`
   min-height: 400px;
@@ -134,6 +135,14 @@ const StandaloneCar = styled.div`
     top: -9em;
   }
 `;
+
+const ButtonContainer = styled.div`
+  ${tw`
+      flex
+      mt-4
+      flex-wrap
+  `}
+`;
 export function TopSection() {
   return (
     <TopSectionContainer>
@@ -144,6 +153,10 @@ export function TopSection() {
           repudiandae doloribus voluptates, minus nihil laboriosam doloremque
           quos iste ipsam quo vero!
         </Description>
+        <ButtonContainer>
+          <Button text="Book your car" />
+          <Button theme="filled" text="Sell your car" />
+        </ButtonContainer>
       </LeftContainer>
       <RightContainer>
         <BlobContainer>
