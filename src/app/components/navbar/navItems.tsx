@@ -35,6 +35,7 @@ const NavItem = styled.li<{ menu?: any }>`
         text-xl
         mb-3
         focus:text-white
+        hover:text-amber-500
       `}
     `}
 `;
