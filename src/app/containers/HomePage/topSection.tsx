@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import tw from 'twin.macro';
 import BlobImg from '../../../assets/images/blob.svg';
 import MclarenCarImg from '../../../assets/images/mclaren-orange-big.png';
+import { SCREENS } from '../../components/responsive';
 
 const TopSectionContainer = styled.div`
   min-height: 400px;
@@ -78,6 +79,30 @@ const BlobContainer = styled.div`
     height: auto;
     max-height: max-content;
   }
+
+  @media (min-width: ${SCREENS.sm}) {
+    width: 40em;
+    max-height: 10em;
+    right: -9em;
+    top: -16em;
+    transform: rotate(-25deg);
+  }
+
+  @media (min-width: ${SCREENS.lg}) {
+    width: 50em;
+    max-height: 30em;
+    right: -7em;
+    top: -15em;
+    transform: rotate(-30deg);
+  }
+
+  @media (min-width: ${SCREENS.xl}) {
+    width: 70em;
+    max-height: 30em;
+    right: -15em;
+    top: -25em;
+    transform: rotate(-20deg);
+  }
 `;
 
 const StandaloneCar = styled.div`
@@ -91,6 +116,22 @@ const StandaloneCar = styled.div`
     width: auto;
     height: 100%;
     max-width: fit-content;
+  }
+
+  @media (min-width: ${SCREENS.sm}) {
+    height: 16em;
+    right: -6em;
+    top: -6em;
+  }
+  @media (min-width: ${SCREENS.lg}) {
+    height: 21em;
+    right: -8em;
+    top: -5em;
+  }
+  @media (min-width: ${SCREENS.xl}) {
+    height: 30em;
+    right: -13em;
+    top: -9em;
   }
 `;
 export function TopSection() {
